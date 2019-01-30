@@ -10,5 +10,6 @@ public interface QiNiuConstant {
     String ASSESS_KEY = "your access_key";
     String SECRET_KEY = "your secret_key";
     String BUCKET = "your bucket_name";
-
+    String HOST = "your host_name";
+    
 }
