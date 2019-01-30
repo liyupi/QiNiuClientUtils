@@ -10,7 +10,13 @@ import java.io.File;
 public class Main {
 
     public static void main(String[] args) {
-        String key = QiNiuClientUtils.uploadFile(new File("xxx"));
+        // 上传文件
+        String key = QiNiuClientUtils.uploadFile(new File("xxx"), "/picture/user/yupi.jpg");
+        // 获取单个文件信息
+        QiNiuClientUtils.getFileInfo("/picture/user/yupi.jpg");
+        // 获取文件列表
+        QiNiuClientUtils.getFileInfoList("/picture", null);
+        // 删除文件
         QiNiuClientUtils.delFile(key);
     }
 
